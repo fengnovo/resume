@@ -1,0 +1,40 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+/*page style*/
+section.summary{
+    height: 100vh;  /* 100vh = viewport height */
+    display: flex;          /* flex布局*/
+    justify-content: center;/*内容居中*/
+    align-items: center;    /*子元素居中*/
+    flex-direction: column; /* 竖向 */
+    background: transparent 50% 50% url(http://img.t.sinajs.cn/t5/skin/public/profile_cover/060.jpg) no-repeat;
+}
+
+section.summary img.avatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%; 
+}
+section.summary .text{
+    line-height: 1.5;
+    text-align: center;
+}
+
+section.works{
+    background: rgb(244,244,244);
+}
+
+section.works img{
+    max-width: 200px;
+}
