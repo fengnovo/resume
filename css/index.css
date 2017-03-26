@@ -10,6 +10,10 @@ ul,ol{
 img{
     max-width: 100%;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 /*page style*/
 section.summary{
@@ -32,9 +36,84 @@ section.summary .text{
 }
 
 section.works{
+    height: 100vh;
     background: rgb(244,244,244);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.works > ul{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: space-between;
 }
 
 section.works img{
     max-width: 200px;
 }
+
+section.works .imageWrapper{
+    padding: 10px 10px 3px;
+    background: #fff;
+    text-align: center;
+}
+
+section.works p{
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 10px;
+}
+
+section.works h1{
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+@media (max-width:500px){
+    section.works h1{
+        padding: 1em;
+    }
+    section.works{
+        height: auto;
+        min-height: 100vh;
+    }
+    section.works > ul{
+        justify-content: center;
+    }
+}
+
+section.skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+section.contact{
+     height: 100vh; 
+     background: rgb(244,244,244);
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     line-height: 2;
+}
+
+section.contact > dl{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em;
+}
+
+section.contact > dl > dt{
+    width: 3em;
+}
+
+section.contact > dl > dd{
+    width: 17em;
+}
+
